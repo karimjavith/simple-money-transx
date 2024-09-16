@@ -24,3 +24,14 @@ As part of this process however, you should look to refactor some of the code in
 Once you have completed test, zip up your solution, excluding any build artifacts to reduce the size, and email it back to our recruitment team.
 
 Good luck!
+
+## **Karim Notes**
+
+* Approached the problem with TDD setup.
+* Lost sometime during the kick off as there were some conflict with my vscode and dotnet sdk setup :disappointed:
+* Have used xunit and moq for testing purposes.
+* The failing tests highlighted that there is a bug in transfer service withdrawn money calculation.
+* After fixing the tests (for both existing and new features), I realised that there are some repetitions with the balance/withdrawn calculation in the methods. So, updated the Account entity with some calculation methods for debit and credit which should hopefully make the method bit readable.
+* I find the hard code values such as limits for pay-in and minimum balance should be in configs rather than in-line.
+* I am happy with the existing solution given the time spent. However, I am keen to abstract away the validation to a separate class if it is intended to break the rule of 2.
+* Thanks for taking your time to review this work. Please let me know your comments and feedback.

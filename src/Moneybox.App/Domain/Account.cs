@@ -15,5 +15,19 @@ namespace Moneybox.App
         public decimal Withdrawn { get; set; }
 
         public decimal PaidIn { get; set; }
+
+
+        public void UpdateBalanceAfterDebit(decimal amount)
+        {
+            Balance -= amount;
+            Withdrawn += amount;
+        }
+
+
+        public void UpdateBalanceAfterCredit(decimal amount)
+        {
+            Balance += amount;
+            PaidIn += amount;
+        }
     }
 }

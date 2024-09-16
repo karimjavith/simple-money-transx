@@ -30,9 +30,8 @@ namespace Moneybox.App.Features
                 this.notificationService.NotifyFundsLow(from.User.Email);
             }
 
-            from.Balance = from.Balance - amount;
-            from.Withdrawn = from.Withdrawn + amount;
 
+            from.UpdateBalanceAfterDebit(amount);
 
             this.accountRepository.Update(from);
         }
