@@ -99,8 +99,8 @@ namespace Moneybox.App.Test
         [Fact]
         public void ShouldThrowException_WhenPayInLimitExceeded()
         {
-            // Arrange: Peter is close to the pay-in limit (3800 out of 4000)
-            SetupBasicAccounts(1000m, 3000m);
+            // Arrange: Peter is close to the pay-in limit (3000 out of 4000)
+            SetupBasicAccounts(10000m, 3000m);
             var transferMoney = new TransferMoney(mockAccountRepository.Object, mockNotificationService.Object);
 
             // Act & Assert
