@@ -1,6 +1,6 @@
 # Moneybox money transfer and withdraw spec
 
-[] TDD - Tests for the existing feature and the new feature
+[x] TDD - Tests for the existing feature and the new feature
 [] TDD - Fix the existing tests
 [] TDD - Add the new tests for the new feature
 [] TDD - Fix the existing tests
